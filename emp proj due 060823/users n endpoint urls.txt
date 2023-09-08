@@ -1,0 +1,19 @@
+
+user: kiran  pw: welcome  privileges: view/search/sort
+ 
+admin: vinay  pw: welcome  privileges: view/add/search/sort/update 
+
+superadmin: ramesh pw: welcome privileges: view/add/search/update/delete
+
+end-point urls:
+
+http://localhost:8080/employees/list
+http://localhost:8080/employees/list-sorted?sortOrder=asc
+http://localhost:8080/employees/list-sorted?sortOrder=desc
+add record - http://localhost:8080/employees/form?
+update record - http://localhost:8080/employees/showFormForUpdate
+search record - http://localhost:8080/employees/search?keyword=Soch
+@RequestMapping("/delete")
+http://localhost:8080/login
+http://localhost:8080/logout
+
